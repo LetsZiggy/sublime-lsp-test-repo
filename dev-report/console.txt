@@ -1,0 +1,72 @@
+/* ---vscode: console output--- */
+
+[DocumentSettings] Exclude files based on globs (from setting: aureliaProject.exclude): 
+[DocumentSettings]   **/node_modules, **/out, **/build, **/dist, aurelia_project
+[DocumentSettings] Include files based on globs (from setting: aureliaProject.include): 
+[DocumentSettings]   src
+[initialization] Initilization started.
+[AureliaProject] Found 1 package.json file(s):
+[AureliaProject]   /home/user/code/sublime-lsp-test-repo/package.json
+[AureliaProject]   Searched in: **/package.json
+[AureliaProject]   Excluded: **/node_modules, **/out, **/build, **/dist, aurelia_project
+[AureliaProject] Found 1 Aurelia project(s) in: 
+[AureliaProject]   /home/user/code/sublime-lsp-test-repo
+[AureliaProject] Parsing Aurelia related data...
+[AureliaTsMorph] Including files based on: /home/user/code/sublime-lsp-test-repo
+[AureliaComponents] Found 5 Components.
+[initialization] Initilization done. Aurelia Extension is ready to use. 🚀 (took 3925.6 ms)
+
+/* ---vscode: .code-workspace settings--- */
+
+{
+	"settings": {
+		// "aurelia.pathToTsConfig": "<absolute-path>/tsconfig.json",
+		"aurelia.pathToTsConfig": "/home/user/code/sublime-lsp-test-repo/tsconfig.json",
+
+		// "aurelia.aureliaProject.rootDirectory": "<absolute-path>"
+		"aurelia.aureliaProject.rootDirectory": "/home/user/code/sublime-lsp-test-repo"
+	}
+}
+
+/* ---sublime-text: console output <LSP settings: "log_debug": true, "log_server": [ "panel" ]>--- */
+
+startup, version: 4143 linux x64 channel: stable
+...
+plugins loaded
+LSP: loading project-only configuration LSP-aurelia
+LSP: enabled configs: LSP-bash, LSP-dockerfile, LSP-graphql, LSP-json, LSP-yaml
+LSP: disabled configs: LSP-aurelia, LSP-eslint, LSP-intelephense, LSP-pyright, LSP-ruff, LSP-stylelint, LSP-tailwindcss, LSP-typescript, clangd, erlang-ls, gopls, ocaml, polymer-ide, ruby, rust-analyzer, sorbet
+LSP: applying .sublime-project override for LSP-aurelia
+OverrideAudit: Initializing
+OverrideAudit: Sublime version is unchanged; skipping automatic report
+[sublack:main.py](INFO) Loglevel set to INFO
+LSP: Resolved Node.js Runtime for package LSP-aurelia: NodeRuntimePATH(node: /usr/bin/node, npm: /usr/bin/npm, version: 19.6.0)
+LSP: starting ['/usr/bin/node', '/home/user/.cache/sublime-text/Package Storage/LSP-aurelia/19.6.0/server/node_modules/aurelia/server/out/server.js', '--stdio'] in /home/user/code/sublime-lsp-test-repo
+reloading settings Packages/User/ApplySyntax.ext-list
+reloading settings Packages/User/Bash.sublime-settings
+LSP: LSP-aurelia: Supported execute commands: ['extension.au.refactor.aTag', 'extension.au.reloadExtension', 'extension.extractComponent', 'extension.declareViewModelVariable']
+LSP: LSP-aurelia: registering capability: didChangeConfigurationProvider
+Package Control: Skipping automatic upgrade, last run at 2023-02-28 12:14:57, next run at 2023-02-28 13:14:57 or after
+LSP: starting ['/usr/bin/node', '/home/user/.cache/sublime-text/Package Storage/LSP-aurelia/19.6.0/server/node_modules/aurelia/server/out/server.js', '--stdio'] in /home/user/code/sublime-lsp-test-repo
+LSP: LSP-aurelia: Supported execute commands: ['extension.au.refactor.aTag', 'extension.au.reloadExtension', 'extension.extractComponent', 'extension.declareViewModelVariable']
+LSP: LSP-aurelia: registering capability: didChangeConfigurationProvider
+
+/* ---sublime-text: .sublime-project <LSP settings: "log_debug": true, "log_server": [ "panel" ]>--- */
+
+{
+	"settings": {
+		"LSP": {
+			/* LSP-aurelia */
+			"LSP-aurelia": {
+				"enabled": true,
+				"settings": {
+					// "aurelia.pathToTsConfig": "${project_path}/tsconfig.json",
+					"aurelia.pathToTsConfig": "/home/user/code/sublime-lsp-test-repo/tsconfig.json",
+
+					// "aurelia.aureliaProject.rootDirectory": "${project_path}",
+					"aurelia.aureliaProject.rootDirectory": "/home/user/code/sublime-lsp-test-repo",
+				},
+			},
+		},
+	},
+}
