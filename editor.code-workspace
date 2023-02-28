@@ -1,0 +1,38 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		// "aurelia.pathToTsConfig": "<absolute-path>/tsconfig.json",
+		"aurelia.pathToTsConfig": "/home/user/code/sublime-lsp-test-repo/tsconfig.json",
+
+		// "aurelia.aureliaProject.rootDirectory": "<absolute-path>",
+		"aurelia.aureliaProject.rootDirectory": "/home/user/code/sublime-lsp-test-repo",
+		// "aurelia.aureliaProject.packageJsonInclude": [],
+		// "aurelia.aureliaProject.pathToAureliaFiles": [],
+		// "aurelia.aureliaProject.include": [ "src" ],
+		// "aurelia.aureliaProject.exclude": [
+		// 	"**/node_modules",
+		// 	"**/out",
+		// 	"**/build",
+		// 	"**/dist",
+		// 	"aurelia_project"
+		// ],
+
+		// "aurelia.relatedFiles.view": [ ".html" ],
+		// "aurelia.relatedFiles.script": [ ".js", ".ts" ],
+		// "aurelia.relatedFiles.style": [ ".less", ".sass", ".scss", ".styl", ".css" ],
+		// "aurelia.relatedFiles.unit": [ ".spec.js", ".spec.ts" ],
+		
+		// "aurelia.capabilities": {
+		// 	"completions": true,
+		// 	"codeActions": true,
+		// 	"defintions": true,
+		// 	"renames": true,
+		// 	"documentSymbols": true,
+		// 	"workspaceSymbols": true
+		// }
+	}
+}
